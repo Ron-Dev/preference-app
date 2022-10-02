@@ -1,5 +1,5 @@
 import { Navigate } from 'react-router-dom';
-import useAuthContext from '../../hooks/use-color-mode-context';
+import useAuthContext from '../../hooks/use-auth-context';
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuthContext();

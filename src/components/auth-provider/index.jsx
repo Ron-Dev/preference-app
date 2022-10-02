@@ -1,11 +1,19 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import { AuthContext } from './auth-provider.context';
 import useLocalStorage from '../../hooks/use-local-storage';
+import { setAuthToken } from '../../services/api-service';
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useLocalStorage('user', null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user?.token) {
+      return;
+    }
+    setAuthToken(user.token);
+  }, [user]);
 
   const signIn = async (data) => {
     setUser(data);

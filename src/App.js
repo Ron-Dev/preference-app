@@ -4,7 +4,7 @@ import Home from './views/home-page';
 import SignIn from './views/sign-in-page';
 import ProtectedRoute from './components/protected-route';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Routes>
@@ -20,6 +20,6 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
