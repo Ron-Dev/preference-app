@@ -1,14 +1,10 @@
 export const colorPalette = {
-  RED: '#f44336',
   BLUE: '#2196f3',
-  GREEN: '#4caf50'
+  GREEN: '#4caf50',
+  RED: '#f44336'
 };
 
 export const colorPaletteOptions = [
-  {
-    label: 'Red',
-    value: colorPalette.RED
-  },
   {
     label: 'Blue',
     value: colorPalette.BLUE
@@ -16,5 +12,9 @@ export const colorPaletteOptions = [
   {
     label: 'Green',
     value: colorPalette.GREEN
+  },
+  {
+    label: 'Red',
+    value: colorPalette.RED
   }
 ];

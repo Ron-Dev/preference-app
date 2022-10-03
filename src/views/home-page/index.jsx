@@ -50,7 +50,7 @@ const HomePage = () => {
           {colorOptions}
         </TextField>
         <IconButton aria-label="logout" color="primary" onClick={signOut}>
-          <LogoutIcon />
+          <LogoutIcon /> logout
         </IconButton>
       </Box>
     </AppBar>
